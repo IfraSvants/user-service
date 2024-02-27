@@ -52,7 +52,7 @@ public class UserEntity implements Serializable {
 	String lastName;
 	
 	@Column( nullable = false )
-	String Country;
+	String country;
 	
 	@OneToMany(mappedBy = "user" ,cascade = CascadeType.ALL , fetch = FetchType.LAZY )
 	List<TripReservationEntity> tripsReservation ;
